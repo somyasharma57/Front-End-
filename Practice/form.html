@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        form {
+            border: 6px double black;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+        }
+        h1{
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body><h1>Registration Form</h1>
+        <form>
+            <label>First Name:</label>
+            <input type="text" name="first_name" required><br><br>
+            <label>Last Name:</label>
+            <input type="text" name="last_name" required><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" required><br><br>
+            <label>Password:</label>
+            <input type="password" name="password" required><br><br>
+            <label>Hobbies:</label><br>
+            <input type="checkbox" name="hobbies" value="Reading"> Reading<br>
+            <input type="checkbox" name="hobbies" value="Reading"> Dancing<br>
+            <input type="checkbox" name="hobbies" value="Reading"> Singing<br><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male">Male<br>
+            <input type="radio" name="gender" value="Female">Female<br><br>
+            <label>Country</label>
+            <select name="country" required>
+                <option value="">Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
