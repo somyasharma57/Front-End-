@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background-color: #f9f9f9;
+            border-right: 1px solid #ddd;
+            padding: 10px;
+            position: fixed;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin: 20px 0 10px;
+        }
+        .item {
+            padding: 10px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .item:hover {
+            background-color: #e5e5e5;
+        }
+        .sign-in {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .sign-in-button {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #e5e5e5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .main {
+            margin-left: 240px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;     
+            padding: 20px;
+            text-align: center;
+        }
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        .search-message {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="item">YouTube</div>
+        <div class="item">Home</div>
+        <div class="item">Shorts</div>
+        <div class="item">Subscriptions</div>
+        <div class="item">You</div>
+        <div class="item">History</div>
+        <div class="item">Playlist</div>
+
+        <div class="sign-in">
+            Sign in to like videos, comment, and subscribe.
+            <br>
+            <a href="#" class="sign-in-button">Sign in</a>
+        </div>
+
+        <h2>Explore</h2>
+        <div class="item">Shopping</div>
+        <div class="item">Music</div>
+        <div class="item">Movies</div>
+        <div class="item">Live</div>
+        <div class="item">Gaming</div>
+        <div class="item">News</div>
+    </div>
+
+    <div class="main">
+        <input type="text" class="search-box" placeholder="Search">
+        <div class="search-message">
+            Try searching to get started
+        </div>
+        <p>Start watching videos to help us build a feed of videos you'll love.</p>
+    </div>
+
+</body>
+</html>
